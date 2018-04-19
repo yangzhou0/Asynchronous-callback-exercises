@@ -30,6 +30,10 @@ function innerBubbleSortLoop(arr, i, madeAnySwaps, outerBubbleSortLoop){
         i++;
         innerBubbleSortLoop(arr,i,madeAnySwaps,outerBubbleSortLoop);
       }
+      else {
+        console.log('only enter yes or no');
+        innerBubbleSortLoop(arr,i,madeAnySwaps,outerBubbleSortLoop);
+      }
     })
   }
   else{
@@ -46,7 +50,7 @@ function sortCompletionCallback(arr){
   reader.close();
 }
 
-absurdBubbleSort([3,4,2,-1,5],sortCompletionCallback);
+absurdBubbleSort([10,4,-1,5],sortCompletionCallback);
 
 // function bubbleSort(arr){
 //   let isSorted = false;
